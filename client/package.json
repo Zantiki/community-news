@@ -1,0 +1,49 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack --mode development --host 0.0.0.0 --port 4000 --watch",
+    "test": "jest --detectOpenHandles --forceExit"
+  },
+  "jest": {
+    "testRegex": "./tests/.+Test\\.js$",
+    "setupFiles": [
+      "./tests/setup.js"
+    ],
+    "testURL": "http://localhost"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-simplified": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest": "^24.9.0",
+    "react": "^16.11.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

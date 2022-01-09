@@ -1,0 +1,33 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js",
+    "test": "jest --detectOpenHandles --forceExit"
+  },
+  "jest": {
+    "testRegex": "./tests/.+Test\\.js$",
+    "testURL": "http://localhost"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "latest",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.0",
+    "properties-reader": "^0.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.4",
+    "reload": "^3.0.2",
+    "sequelize": "^5.21.2"
+  }
+}
